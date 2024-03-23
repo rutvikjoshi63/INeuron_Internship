@@ -4,7 +4,7 @@ Start Date: 23rd March 2024
 # Table of Content:
 
 
-Description of work:
+# Description of work:
 | Project                    	| Description                              	|
 |----------------------------	|------------------------------------------	|
 | Title                      	| Concrete Compressive Strength Prediction 	|
@@ -38,19 +38,40 @@ git remote add origin git@github.com:rutvikjoshi63/INeuron_Internship.git
 git pull origin
 
 ```
-
+Add environment name in .gitignore file and push to remote
+## Create a account on DagsHub and connect with your Github
+Add details of Experiments from Remote
+Open Git Bash and Export Tracking, username, password,etc by entering below command
+ ```
+export text
+```
 ## Create a new virtual environment
 ### Deactivate current(base) environment
 ```
 conda create -p CCStrength_Prediction python==3.9 -y
 ```
-## Create a new requirement.txt file 
+Activate new environment
+
+## Create a new requirement.txt file and add require libraries
+eg DVC for large dats sets(ref: https://youtu.be/mHQPzVse2oA?si=jlFSTR4FnSqXcHHP)
 ```
 pip install -r requirements.txt
+# if applicable
+dvc init
+```
+## Create template.py file to automate files & folder creation
+```
+```
 
+## Create app.py file to either taking template from MLflow website
+to add remote server like DAGShub, GCP, AWS, Azure add below code
 ```
-## Create app.py file to execute on Flask 
+# For Remotee server only(servername)
+remote_server_uri = "{url}"
+mlflow.set_tracking_uri(remote_server_uri)
 ```
-pip install -r requirements.txt
-
+Open git bash and type
 ```
+python app.py
+```
+# 
