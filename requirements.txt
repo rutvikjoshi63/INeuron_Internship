@@ -1,0 +1,7 @@
+mlflow==2.5.0
+Flask
+scikit-learn
+pandas
+numpy
+matplotlib
+gunicorn

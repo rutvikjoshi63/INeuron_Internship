@@ -1,0 +1,26 @@
+==> 2024-03-23 16:03:29 <==
+# cmd: /home/rutvik/miniconda3/bin/conda create -p CCStrength_Prediction python==3.9 -y
+# conda version: 4.8.3
++conda-forge/linux-64::_libgcc_mutex-0.1-conda_forge
++conda-forge/linux-64::_openmp_mutex-4.5-2_gnu
++conda-forge/linux-64::ca-certificates-2024.2.2-hbcca054_0
++conda-forge/linux-64::ld_impl_linux-64-2.40-h41732ed_0
++conda-forge/linux-64::libffi-3.3-h58526e2_2
++conda-forge/linux-64::libgcc-ng-13.2.0-h807b86a_5
++conda-forge/linux-64::libgomp-13.2.0-h807b86a_5
++conda-forge/linux-64::libsqlite-3.45.2-h2797004_0
++conda-forge/linux-64::libstdcxx-ng-13.2.0-h7e041cc_5
++conda-forge/linux-64::libzlib-1.2.13-hd590300_5
++conda-forge/linux-64::ncurses-6.4.20240210-h59595ed_0
++conda-forge/linux-64::openssl-1.1.1w-hd590300_0
++conda-forge/linux-64::python-3.9.0-hffdb5ce_5_cpython
++conda-forge/linux-64::readline-8.2-h8228510_1
++conda-forge/linux-64::sqlite-3.45.2-h2c6b66d_0
++conda-forge/linux-64::tk-8.6.13-noxft_h4845f30_101
++conda-forge/linux-64::xz-5.2.6-h166bdaf_0
++conda-forge/linux-64::zlib-1.2.13-hd590300_5
++conda-forge/noarch::pip-24.0-pyhd8ed1ab_0
++conda-forge/noarch::setuptools-69.2.0-pyhd8ed1ab_0
++conda-forge/noarch::tzdata-2024a-h0c530f3_0
++conda-forge/noarch::wheel-0.43.0-pyhd8ed1ab_0
+# update specs: ['python==3.9']
