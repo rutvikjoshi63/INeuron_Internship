@@ -35,6 +35,8 @@ git commit -m "first commit"
 git branch -M main
 git status
 git remote add origin git@github.com:rutvikjoshi63/INeuron_Internship.git
+git pull origin
+
 ```
 
 ## Create a new virtual environment
