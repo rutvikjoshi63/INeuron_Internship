@@ -69,12 +69,29 @@ dvc init
 pip install -r requirements.txt
 ```
 To include all the basic functionality required in all End-to-End ML Projects
+___
+**Start of Logging Imprementation**
 ## 4.8 Make changes to src/mlProject/__init__.py file
 ## 4.9 Make changes to main.py file
 ## 4.10 Make changes to src/mlProject/utlis/common.py file 
 1. Look into new libraries like ConfigBox from box library to recall dictionary value using "." operator
 2. Check use of ensure_annotations to restrict usuage of datatype 
 We have research/trials.ipynb to check functionalities or code checking
+___
+## 4.11 Update files in below order
+- config.yaml
+- schema.yaml
+- params.yaml
+- entity
+- configuration manager in src config
+- components
+- pipeline
+- main.py
+- dvc.yaml
+- app.py
+
+# 5. Data Ingestion
+## 5.1 create 01_data_ingestion.ipynb file in research folder
 
 ## Create app.py file to either taking template from MLflow website
 to add remote server like DAGShub, GCP, AWS, Azure add below code
