@@ -9,7 +9,7 @@ project_name = "mlProject"
 
 
 list_of_files = [
-    ".github/workflows/.gitkeep",
+    ".github/workflows/.gitkeep", # CI/CD pipeline using Github Action
     f"src/{project_name}/__init__.py",
     f"src/{project_name}/components/__init__.py",
     f"src/{project_name}/utils/__init__.py",
@@ -20,7 +20,7 @@ list_of_files = [
     f"src/{project_name}/entity/__init__.py",
     f"src/{project_name}/entity/config_entity.py",
     f"src/{project_name}/constants/__init__.py",
-    "config/config.yaml",
+    "config/config.yaml",  # Configuration of project
     
     # Remove when dvc not needed
     "dvc.yaml",
@@ -33,7 +33,7 @@ list_of_files = [
     "setup.py",
     "research/trials.ipynb",
     "templates/index.html",
-    "test.py"
+    # "test.py"
 
 
 ]

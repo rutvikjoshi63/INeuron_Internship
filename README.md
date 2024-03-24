@@ -61,8 +61,8 @@ dvc init
 ```
 ## Create template.py file to automate files & folder creation
 ```
+python template.py
 ```
-
 ## Create app.py file to either taking template from MLflow website
 to add remote server like DAGShub, GCP, AWS, Azure add below code
 ```
