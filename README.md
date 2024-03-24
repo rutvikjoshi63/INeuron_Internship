@@ -81,8 +81,8 @@ ___
 ## 4.11 Update files in below order
 - config.yaml
 - schema.yaml
-- params.yaml
-- entity
+- params.yaml # skip initially
+- entity (data_ingestion.ipynb, constants/__init__.py)
 - configuration manager in src config
 - components
 - pipeline
