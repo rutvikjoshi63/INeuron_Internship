@@ -78,9 +78,10 @@ ___
 2. Check use of ensure_annotations to restrict usuage of datatype 
 We have research/trials.ipynb to check functionalities or code checking
 ___
-## 4.11 Update files in below order
+# 5. Data Ingestion
+## 5.1 Setup 
+Create 01_data_ingestion.ipynb file in research folder & Update files in below order
 - config.yaml
-- schema.yaml
 - params.yaml # skip initially
 - entity (data_ingestion.ipynb, constants/__init__.py)
 - configuration manager in src config
@@ -89,9 +90,14 @@ ___
 - main.py
 - dvc.yaml
 - app.py
+Now **Run main.py**
 
-# 5. Data Ingestion
-## 5.1 create 01_data_ingestion.ipynb file in research folder
+# 6. Data Validation
+## 6.1 Setup
+Create 01_data_ingestion.ipynb file in research folder & Update files in below order
+- schema.yaml
+- entity (data_ingestion.ipynb, constants/__init__.py)
+- Follow 5.1 points
 
 ## Create app.py file to either taking template from MLflow website
 to add remote server like DAGShub, GCP, AWS, Azure add below code

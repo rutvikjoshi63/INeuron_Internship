@@ -1,18 +1,14 @@
 COLUMNS:
-  fixed acidity: float64
-  volatile acidity: float64
-  citric acid: float64
-  residual sugar: float64
-  chlorides: float64
-  free sulfur dioxide: float64
-  total sulfur dioxide: float64
-  density: float64
-  pH: float64
-  sulphates: float64
-  alcohol: float64
-  quality: int64
-
-
+  cement : float64
+  blast_furnace_slag : float64
+  fly_ash : float64
+  water : float64
+  superplasticizer : float64
+  coarse_aggregate : float64
+  fine_aggregate : float64
+  age : int64
+  
+  
 TARGET_COLUMN:
-  name: quality
+  concrete_compressive_strength : float64
   
