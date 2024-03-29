@@ -96,7 +96,8 @@ Now **Run main.py**
 ## 6.1 Setup
 Create 01_data_ingestion.ipynb file in research folder & Update files in below order
 - schema.yaml
-- entity (data_ingestion.ipynb, constants/__init__.py)
+- entity (data_validation.ipynb, constants/__init__.py)
+- components
 - Follow 5.1 points
 
 ## Create app.py file to either taking template from MLflow website
