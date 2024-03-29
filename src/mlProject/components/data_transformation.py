@@ -4,6 +4,7 @@ from sklearn.model_selection import train_test_split
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from mlProject.entity.config_entity import DataTransformationConfig
+import numpy as np
 
 
 
@@ -32,31 +33,19 @@ class DataTransformation:
         ## Not fit_transform...but transform only bcoz we need to transformed as per train model
         x_test = scaler.transform(x_test)
         
-        # train, test = train_test_split(data)
-        print('X_train',X_train)
-        print('y_train',y_train)
-        print('x_test',x_test)
-        print('y_test',y_test) 
+        train = np.hstack((X_train,np.atleast_2d(np.array(y_train)).T))
+        test = np.hstack((x_test,np.atleast_2d(np.array(y_test)).T))
         
         arr = [i for i in data.columns]
-        X_train_df = pd.DataFrame(X_train,columns=arr[:-1])
-        y_train_df = pd.DataFrame(y_train,columns=[arr[-1]])
-        x_test_df = pd.DataFrame(x_test,columns=arr[:-1])
-        y_test_df = pd.DataFrame(y_test,columns=[arr[-1]])
-        
-        X_train_df.to_csv(os.path.join(self.config.root_dir, "x_train.csv"),index = False)
-        y_train_df.to_csv(os.path.join(self.config.root_dir, "x_test.csv"),index = False)
-        x_test_df.to_csv(os.path.join(self.config.root_dir, "y_train.csv"),index = False)
-        y_test_df.to_csv(os.path.join(self.config.root_dir, "y_test.csv"),index = False)
+        train_df = pd.DataFrame(train,columns=arr[:])
+        test_df = pd.DataFrame(test,columns=arr[:])
+        train_df.to_csv(os.path.join(self.config.root_dir, "train.csv"),index = False)
+        test_df.to_csv(os.path.join(self.config.root_dir, "test.csv"),index = False)
         
         logger.info("Splited data into training and test sets")
-        logger.info(X_train.shape)
-        logger.info(x_test.shape)
-        logger.info(y_train.shape)
-        logger.info(y_test.shape)
+        logger.info(train_df.shape)
+        logger.info(test_df.shape)
 
-        print(X_train.shape)
-        print(y_train.shape)
-        print(x_test.shape)
-        print(y_test.shape)
+        print(train_df.shape)
+        print(test_df.shape)
         

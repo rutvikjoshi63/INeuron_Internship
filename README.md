@@ -97,9 +97,47 @@ Now **Run main.py**
 Create 01_data_ingestion.ipynb file in research folder & Update files in below order
 - schema.yaml
 - entity (data_validation.ipynb, constants/__init__.py)
+- config.yaml
 - components
-- Follow 5.1 points
+- pipeline
+- main.py
+## 6.2 Exploratory Data Analysis
+Note insights in the data and manage **NULL** values
 
+# 7. Data Transformation
+## 7.1 Setup
+Create 01_data_ingestion.ipynb file in research folder & Update files in below order
+- entity (data_validation.ipynb, constants/__init__.py)
+- config.yaml
+- components
+- pipeline
+- main.py
+## 7.2 Create Train and Test data
+
+# 8. Model Trainer
+## 8.1 Setup
+Create 01_data_ingestion.ipynb file in research folder & Update files in below order
+- entity (data_validation.ipynb, constants/__init__.py)
+- config.yaml
+- components
+- pipeline
+- main.py
+
+## 8.2 Create Train and Test data
+- config.yaml
+
+# 9. Model Evaluation
+Here we add mlflow code
+## 7.1 Setup
+Create 01_data_ingestion.ipynb file in research folder & Update files in below order
+- entity (data_validation.ipynb, constants/__init__.py)
+- config.yaml
+- components
+- pipeline
+- main.py
+
+## 7.2 Create Train and Test data
+- config.yaml
 ## Create app.py file to either taking template from MLflow website
 to add remote server like DAGShub, GCP, AWS, Azure add below code
 ```
