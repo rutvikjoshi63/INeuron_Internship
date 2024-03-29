@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Rutvik Joshi">
+
+    <title>Welcome to Our AI Models</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+</head>
+<body style="background-color: #f5f5f5;"class="d-flex h-100 text-center text-bg-dark">
+    <div style="display: flex; width: 100%;">
+        <aside style="width: 20%; background-color: #4285f4; color: white; padding: 20px;">
+            <h3>Navigation</h3>
+            <ul>
+                <li style="color: #802f00;"><a href="https://rutvikjoshi63.github.io/" >Home</a></li>
+                <li><a href="rutvikjoshi63@gmail.com">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </aside>
+        <main style="width: 80%; padding: 20px;">
+            <h1 style="text-align: center; color: #4285f4;">Welcome to my AI Projects</h1>
+            <hr style="border-color: #4285f4;">
+
+            <h2>Explore Our AI Models</h2>
+            
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                </form><h3 style="color: #4285f4;">Model 1: Boston Housing Price Prediction</h3>
+                <p>Accurately predict housing prices in the Boston area using advanced AI techniques.</p>
+                <form action="{{ url_for('predict')}}" method="GET">
+                <button style="background-color: #4285f4; color: white;">Try It Now</button>
+                </form>
+            </div>
+
+            <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+                <h3 style="color: #4285f4;">Model 2: Concrete Compressive Strength</h3>
+                <p>It takes 28 days to test compressive strength of concrete, which is a long period! We can save a lot of time and
+                  effort by using Data Science to estimate how much quantity of which raw material we
+                  need for acceptable compressive strength.</p>
+                <form action="{{ url_for('Modeltwo')}}" method="GET">
+                <button style="background-color: #4285f4; color: white;">Try It Now</button>
+              </form>
+            </div>
+
+            <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+                <h3 style="color: #4285f4;">Model 3: Under Development</h3>
+                <p>Stay tuned for our next groundbreaking AI model, coming soon!</p>
+                <button disabled style="background-color: #ccc; color: #4285f4;">Coming Soon</button>
+            </div>
+
+            <hr style="border-color: #4285f4;">
+            <p style="text-align: center; color: #4285f4;">Developed by Rutvik Joshi @IIT-Bombay</p>
+        </main>
+    </div>
+
+<!-- Footer-->
+<footer class="border-top">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <ul class="list-inline text-center">
+                    <li class="list-inline-item">
+                        <a href="https://www.linkedin.com/in/boktiarahmed73/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.youtube.com/dswithbappy">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://github.com/entbappy">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="small text-center text-muted fst-italic"></div>
+                <div class="small text-center text-muted fst-italic"></div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Bootstrap core JS
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>-->
+<!-- <script src="static/js/scripts.js"></script> --> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
